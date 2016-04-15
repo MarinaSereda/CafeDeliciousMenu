@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/desc"/>
+
+            <TextView
+                android:id="@+id/textItemSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/itemImage" />
+
+            <TextView
+                android:id="@+id/priceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:layout_below="@id/textItemSelection" />
+
+            <LinearLayout
+                android:id="@+id/entered_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/priceItem"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:id="@+id/textInputItemCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:text="@string/text_input_item_count" />
+                <Button
+                    android:id="@+id/but_id_arrow_left"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/arrow_left"
+                    android:rotation="270"
+                    />
+                <TextView
+                    android:id="@+id/tv_id_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:padding="8dp"
+                    android:text="@string/seed"/>
+                <Button
+                    android:id="@+id/but_id_arrow_right"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/arrow_left"
+                    android:rotation="90"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_below="@id/entered_layout"/>
+
+            <Button
+                android:id="@+id/but_id_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amount"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/buy"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

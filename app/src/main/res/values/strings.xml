@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="desc">Image Menu</string>
+    <integer name="id_image">1</integer>
+    <integer name="id_image_button">2</integer>
+    <string name="text_input_item_count">Quantity  </string>
+    <string name="seed">1</string>
+    <string name="price_item">Price  </string>
+    <string name="check">Check</string>
+    <string name="buy">Added</string>
+    <string name="cafeName">Cafe "Delicious"</string>
+    <string name="text_suma">Sum = $</string>
+</resources>
